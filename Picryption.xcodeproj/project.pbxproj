@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B874489D3BD32900ABD833E /* Pods_PicryptionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 788A9EB76F6050CB658BD205 /* Pods_PicryptionUITests.framework */; };
+		A83B2D9DA15A79E4C131E350 /* Pods_PicryptionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D001AE70008B4DC34C481B2D /* Pods_PicryptionTests.framework */; };
 		C1DC5B7F1EAA576F00D10A06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC5B7E1EAA576F00D10A06 /* AppDelegate.swift */; };
 		C1DC5B811EAA576F00D10A06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC5B801EAA576F00D10A06 /* ViewController.swift */; };
 		C1DC5B841EAA576F00D10A06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1DC5B821EAA576F00D10A06 /* Main.storyboard */; };
@@ -15,6 +17,12 @@
 		C1DC5B8C1EAA576F00D10A06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1DC5B8A1EAA576F00D10A06 /* LaunchScreen.storyboard */; };
 		C1DC5B971EAA576F00D10A06 /* PicryptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC5B961EAA576F00D10A06 /* PicryptionTests.swift */; };
 		C1DC5BA21EAA576F00D10A06 /* PicryptionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC5BA11EAA576F00D10A06 /* PicryptionUITests.swift */; };
+		C1DC5BB01EAA578000D10A06 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC5BAF1EAA578000D10A06 /* Image.swift */; };
+		C1DC5BB51EAA589D00D10A06 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC5BB41EAA589D00D10A06 /* Extensions.swift */; };
+		C1DC5BB81EAA597000D10A06 /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC5BB71EAA597000D10A06 /* Protocols.swift */; };
+		C1DC5BBA1EAA59B400D10A06 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC5BB91EAA59B400D10A06 /* Errors.swift */; };
+		C1DC5BBC1EAA5B9800D10A06 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC5BBB1EAA5B9800D10A06 /* Constants.swift */; };
+		F850323D94B1A69E0F238B78 /* Pods_Picryption.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A30DB2E1DC54968D85853539 /* Pods_Picryption.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +43,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3255594D988F7B5CD106B77D /* Pods-PicryptionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicryptionTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PicryptionTests/Pods-PicryptionTests.release.xcconfig"; sourceTree = "<group>"; };
+		39E1A6B323F94A14B51FF369 /* Pods-Picryption.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Picryption.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Picryption/Pods-Picryption.debug.xcconfig"; sourceTree = "<group>"; };
+		6484EB4F419B521759468CAD /* Pods-PicryptionUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicryptionUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PicryptionUITests/Pods-PicryptionUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6D09C701995661E9509A523A /* Pods-Picryption.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Picryption.release.xcconfig"; path = "Pods/Target Support Files/Pods-Picryption/Pods-Picryption.release.xcconfig"; sourceTree = "<group>"; };
+		788A9EB76F6050CB658BD205 /* Pods_PicryptionUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PicryptionUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A30DB2E1DC54968D85853539 /* Pods_Picryption.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Picryption.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA55D25EADEA21AF2986E63C /* Pods-PicryptionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicryptionTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PicryptionTests/Pods-PicryptionTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B60AC1454B7410E26A485374 /* Pods-PicryptionUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicryptionUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PicryptionUITests/Pods-PicryptionUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C1DC5B7B1EAA576F00D10A06 /* Picryption.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Picryption.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1DC5B7E1EAA576F00D10A06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C1DC5B801EAA576F00D10A06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +65,12 @@
 		C1DC5B9D1EAA576F00D10A06 /* PicryptionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PicryptionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1DC5BA11EAA576F00D10A06 /* PicryptionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicryptionUITests.swift; sourceTree = "<group>"; };
 		C1DC5BA31EAA576F00D10A06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1DC5BAF1EAA578000D10A06 /* Image.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		C1DC5BB41EAA589D00D10A06 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C1DC5BB71EAA597000D10A06 /* Protocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
+		C1DC5BB91EAA59B400D10A06 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		C1DC5BBB1EAA5B9800D10A06 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D001AE70008B4DC34C481B2D /* Pods_PicryptionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PicryptionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F850323D94B1A69E0F238B78 /* Pods_Picryption.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A83B2D9DA15A79E4C131E350 /* Pods_PicryptionTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +94,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B874489D3BD32900ABD833E /* Pods_PicryptionUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14A362C119A120F4111FEBA1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				39E1A6B323F94A14B51FF369 /* Pods-Picryption.debug.xcconfig */,
+				6D09C701995661E9509A523A /* Pods-Picryption.release.xcconfig */,
+				AA55D25EADEA21AF2986E63C /* Pods-PicryptionTests.debug.xcconfig */,
+				3255594D988F7B5CD106B77D /* Pods-PicryptionTests.release.xcconfig */,
+				B60AC1454B7410E26A485374 /* Pods-PicryptionUITests.debug.xcconfig */,
+				6484EB4F419B521759468CAD /* Pods-PicryptionUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		463E05E2E81A18164C04110C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A30DB2E1DC54968D85853539 /* Pods_Picryption.framework */,
+				D001AE70008B4DC34C481B2D /* Pods_PicryptionTests.framework */,
+				788A9EB76F6050CB658BD205 /* Pods_PicryptionUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C1DC5B721EAA576F00D10A06 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +131,8 @@
 				C1DC5B951EAA576F00D10A06 /* PicryptionTests */,
 				C1DC5BA01EAA576F00D10A06 /* PicryptionUITests */,
 				C1DC5B7C1EAA576F00D10A06 /* Products */,
+				14A362C119A120F4111FEBA1 /* Pods */,
+				463E05E2E81A18164C04110C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +149,11 @@
 		C1DC5B7D1EAA576F00D10A06 /* Picryption */ = {
 			isa = PBXGroup;
 			children = (
-				C1DC5B7E1EAA576F00D10A06 /* AppDelegate.swift */,
-				C1DC5B801EAA576F00D10A06 /* ViewController.swift */,
 				C1DC5B821EAA576F00D10A06 /* Main.storyboard */,
-				C1DC5B881EAA576F00D10A06 /* Assets.xcassets */,
-				C1DC5B8A1EAA576F00D10A06 /* LaunchScreen.storyboard */,
-				C1DC5B8D1EAA576F00D10A06 /* Info.plist */,
-				C1DC5B851EAA576F00D10A06 /* Picryption.xcdatamodeld */,
+				C1DC5BB21EAA578E00D10A06 /* Controller */,
+				C1DC5BB11EAA578400D10A06 /* Model */,
+				C1DC5BB61EAA58A100D10A06 /* Cosmic */,
+				C1DC5BB31EAA579800D10A06 /* Supporting Files */,
 			);
 			path = Picryption;
 			sourceTree = "<group>";
@@ -128,6 +176,45 @@
 			path = PicryptionUITests;
 			sourceTree = "<group>";
 		};
+		C1DC5BB11EAA578400D10A06 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C1DC5BAF1EAA578000D10A06 /* Image.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C1DC5BB21EAA578E00D10A06 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C1DC5B801EAA576F00D10A06 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C1DC5BB31EAA579800D10A06 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C1DC5B7E1EAA576F00D10A06 /* AppDelegate.swift */,
+				C1DC5B881EAA576F00D10A06 /* Assets.xcassets */,
+				C1DC5B8A1EAA576F00D10A06 /* LaunchScreen.storyboard */,
+				C1DC5B8D1EAA576F00D10A06 /* Info.plist */,
+				C1DC5B851EAA576F00D10A06 /* Picryption.xcdatamodeld */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C1DC5BB61EAA58A100D10A06 /* Cosmic */ = {
+			isa = PBXGroup;
+			children = (
+				C1DC5BB41EAA589D00D10A06 /* Extensions.swift */,
+				C1DC5BB71EAA597000D10A06 /* Protocols.swift */,
+				C1DC5BB91EAA59B400D10A06 /* Errors.swift */,
+				C1DC5BBB1EAA5B9800D10A06 /* Constants.swift */,
+			);
+			name = Cosmic;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +222,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C1DC5BA61EAA576F00D10A06 /* Build configuration list for PBXNativeTarget "Picryption" */;
 			buildPhases = (
+				C8B843F1DDCBECC6403E655A /* [CP] Check Pods Manifest.lock */,
 				C1DC5B771EAA576F00D10A06 /* Sources */,
 				C1DC5B781EAA576F00D10A06 /* Frameworks */,
 				C1DC5B791EAA576F00D10A06 /* Resources */,
+				C1569E41D4C97A1FB617E04B /* [CP] Embed Pods Frameworks */,
+				059B0976DC801345F137C5A5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +242,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C1DC5BA91EAA576F00D10A06 /* Build configuration list for PBXNativeTarget "PicryptionTests" */;
 			buildPhases = (
+				066C3744F5B3EE380C9A75A3 /* [CP] Check Pods Manifest.lock */,
 				C1DC5B8E1EAA576F00D10A06 /* Sources */,
 				C1DC5B8F1EAA576F00D10A06 /* Frameworks */,
 				C1DC5B901EAA576F00D10A06 /* Resources */,
+				7D4D23AD3DA3C86B061C7260 /* [CP] Embed Pods Frameworks */,
+				D8067DBDB3AAC3B95D9869DF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +263,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C1DC5BAC1EAA576F00D10A06 /* Build configuration list for PBXNativeTarget "PicryptionUITests" */;
 			buildPhases = (
+				367DCC21689A86A6E67085B3 /* [CP] Check Pods Manifest.lock */,
 				C1DC5B991EAA576F00D10A06 /* Sources */,
 				C1DC5B9A1EAA576F00D10A06 /* Frameworks */,
 				C1DC5B9B1EAA576F00D10A06 /* Resources */,
+				72B82C5649F6F3EBB371B3BD /* [CP] Embed Pods Frameworks */,
+				1A64F16C79C81893140CCBBD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -260,14 +356,157 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		059B0976DC801345F137C5A5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Picryption/Pods-Picryption-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		066C3744F5B3EE380C9A75A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1A64F16C79C81893140CCBBD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PicryptionUITests/Pods-PicryptionUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		367DCC21689A86A6E67085B3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		72B82C5649F6F3EBB371B3BD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PicryptionUITests/Pods-PicryptionUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7D4D23AD3DA3C86B061C7260 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PicryptionTests/Pods-PicryptionTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1569E41D4C97A1FB617E04B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Picryption/Pods-Picryption-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8B843F1DDCBECC6403E655A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D8067DBDB3AAC3B95D9869DF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PicryptionTests/Pods-PicryptionTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C1DC5B771EAA576F00D10A06 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1DC5BB51EAA589D00D10A06 /* Extensions.swift in Sources */,
 				C1DC5B811EAA576F00D10A06 /* ViewController.swift in Sources */,
+				C1DC5BB01EAA578000D10A06 /* Image.swift in Sources */,
+				C1DC5BB81EAA597000D10A06 /* Protocols.swift in Sources */,
 				C1DC5B7F1EAA576F00D10A06 /* AppDelegate.swift in Sources */,
 				C1DC5B871EAA576F00D10A06 /* Picryption.xcdatamodeld in Sources */,
+				C1DC5BBA1EAA59B400D10A06 /* Errors.swift in Sources */,
+				C1DC5BBC1EAA5B9800D10A06 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +658,7 @@
 		};
 		C1DC5BA71EAA576F00D10A06 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39E1A6B323F94A14B51FF369 /* Pods-Picryption.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AWTQ86CKW7;
@@ -432,6 +672,7 @@
 		};
 		C1DC5BA81EAA576F00D10A06 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D09C701995661E9509A523A /* Pods-Picryption.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = AWTQ86CKW7;
@@ -445,6 +686,7 @@
 		};
 		C1DC5BAA1EAA576F00D10A06 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA55D25EADEA21AF2986E63C /* Pods-PicryptionTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -460,6 +702,7 @@
 		};
 		C1DC5BAB1EAA576F00D10A06 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3255594D988F7B5CD106B77D /* Pods-PicryptionTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -475,6 +718,7 @@
 		};
 		C1DC5BAD1EAA576F00D10A06 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B60AC1454B7410E26A485374 /* Pods-PicryptionUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = AWTQ86CKW7;
@@ -489,6 +733,7 @@
 		};
 		C1DC5BAE1EAA576F00D10A06 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6484EB4F419B521759468CAD /* Pods-PicryptionUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = AWTQ86CKW7;
