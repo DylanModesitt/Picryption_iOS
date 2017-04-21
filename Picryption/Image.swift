@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+/*
+ * The Image Class for Picryption
+ *
+*/
+
+
+class Image: NSObject {
+    
+    // ToDo: Impliment this
+    
+}

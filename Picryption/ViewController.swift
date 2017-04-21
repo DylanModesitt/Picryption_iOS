@@ -12,7 +12,6 @@ class ViewController: UIViewController {
     
     // MARK - Variables
     
-    
     // MARK - View Controller Lifecycle
 
     override func viewDidLoad() {
