@@ -7,15 +7,22 @@
 //
 
 import Foundation
+import CoreImage
+import UIKit
 
 /*
  * The Image Class for Picryption
  *
+ * Involves the changing of least significant bit of images
+ * to encode data inside them. Notably, text.
+ *
 */
 
 
-class Image: NSObject {
+class Image: CIImage {
     
     // ToDo: Impliment this
+    
+    
     
 }

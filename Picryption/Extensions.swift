@@ -10,6 +10,47 @@ import Foundation
 import UIKit
 
 
+extension String {
+    
+    // obvious extensions for the purpose of taking strings in and out of binary
+    // sequences
+    
+    func toBinary() -> Data? {
+        return self.data(using: String.Encoding.utf8, allowLossyConversion: false)
+    }
+    
+    func toBinaryString(withFormat: String) -> String? {
+        return self.toBinary()?.reduce("", { $0 + String(format: withFormat, $1)})
+    }
+    
+    func toBinaryArray() -> [[Int]] {
+        var binaryRepresentation: [[Int]] = []
+        let binary = self.toBinary()!
+        for byte in binary {
+            print(byte)
+            binaryRepresentation.append(Int(byte).toBinaryArray())
+        }
+        return binaryRepresentation
+    }
+    
+}
+
+extension Int {
+    
+    // returns the nuymber in binary form (as an array of ints 0, or 1)
+    func toBinaryArray() -> [Int] {
+        var binaryBuilder: [Int] = []
+        var number = self
+        while number != 1 {
+            binaryBuilder.append(number % 2)
+            number /= 2
+        }
+        binaryBuilder.append(1)
+        return binaryBuilder.reversed()
+    }
+    
+}
+
 extension UIAlertView {
     static func simpleAlert(withTitle title: String, andMessage message: String) -> UIAlertView {
         let alert = self.init()
