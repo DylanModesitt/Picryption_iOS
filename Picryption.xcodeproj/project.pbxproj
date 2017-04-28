@@ -9,8 +9,10 @@
 /* Begin PBXBuildFile section */
 		0B874489D3BD32900ABD833E /* Pods_PicryptionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 788A9EB76F6050CB658BD205 /* Pods_PicryptionUITests.framework */; };
 		A83B2D9DA15A79E4C131E350 /* Pods_PicryptionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D001AE70008B4DC34C481B2D /* Pods_PicryptionTests.framework */; };
+		AEDB16311EB3DEB300A82F13 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDB16301EB3DEB300A82F13 /* UploadViewController.swift */; };
+		AEDB16331EB3E7B200A82F13 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDB16321EB3E7B200A82F13 /* MessageViewController.swift */; };
+		AEDB16351EB3E8E100A82F13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDB16341EB3E8E100A82F13 /* ViewController.swift */; };
 		C1DC5B7F1EAA576F00D10A06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC5B7E1EAA576F00D10A06 /* AppDelegate.swift */; };
-		C1DC5B811EAA576F00D10A06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC5B801EAA576F00D10A06 /* ViewController.swift */; };
 		C1DC5B841EAA576F00D10A06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1DC5B821EAA576F00D10A06 /* Main.storyboard */; };
 		C1DC5B871EAA576F00D10A06 /* Picryption.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C1DC5B851EAA576F00D10A06 /* Picryption.xcdatamodeld */; };
 		C1DC5B891EAA576F00D10A06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1DC5B881EAA576F00D10A06 /* Assets.xcassets */; };
@@ -50,10 +52,12 @@
 		788A9EB76F6050CB658BD205 /* Pods_PicryptionUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PicryptionUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A30DB2E1DC54968D85853539 /* Pods_Picryption.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Picryption.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA55D25EADEA21AF2986E63C /* Pods-PicryptionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicryptionTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PicryptionTests/Pods-PicryptionTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AEDB16301EB3DEB300A82F13 /* UploadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
+		AEDB16321EB3E7B200A82F13 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		AEDB16341EB3E8E100A82F13 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B60AC1454B7410E26A485374 /* Pods-PicryptionUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicryptionUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PicryptionUITests/Pods-PicryptionUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C1DC5B7B1EAA576F00D10A06 /* Picryption.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Picryption.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1DC5B7E1EAA576F00D10A06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C1DC5B801EAA576F00D10A06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C1DC5B831EAA576F00D10A06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C1DC5B861EAA576F00D10A06 /* Picryption.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Picryption.xcdatamodel; sourceTree = "<group>"; };
 		C1DC5B881EAA576F00D10A06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -150,6 +154,8 @@
 			isa = PBXGroup;
 			children = (
 				C1DC5B821EAA576F00D10A06 /* Main.storyboard */,
+				AEDB16321EB3E7B200A82F13 /* MessageViewController.swift */,
+				AEDB16301EB3DEB300A82F13 /* UploadViewController.swift */,
 				C1DC5BB21EAA578E00D10A06 /* Controller */,
 				C1DC5BB11EAA578400D10A06 /* Model */,
 				C1DC5BB61EAA58A100D10A06 /* Cosmic */,
@@ -187,7 +193,7 @@
 		C1DC5BB21EAA578E00D10A06 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				C1DC5B801EAA576F00D10A06 /* ViewController.swift */,
+				AEDB16341EB3E8E100A82F13 /* ViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -292,7 +298,6 @@
 				TargetAttributes = {
 					C1DC5B7A1EAA576F00D10A06 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = AWTQ86CKW7;
 						ProvisioningStyle = Automatic;
 					};
 					C1DC5B911EAA576F00D10A06 = {
@@ -499,10 +504,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEDB16351EB3E8E100A82F13 /* ViewController.swift in Sources */,
 				C1DC5BB51EAA589D00D10A06 /* Extensions.swift in Sources */,
-				C1DC5B811EAA576F00D10A06 /* ViewController.swift in Sources */,
 				C1DC5BB01EAA578000D10A06 /* Image.swift in Sources */,
 				C1DC5BB81EAA597000D10A06 /* Protocols.swift in Sources */,
+				AEDB16331EB3E7B200A82F13 /* MessageViewController.swift in Sources */,
+				AEDB16311EB3DEB300A82F13 /* UploadViewController.swift in Sources */,
 				C1DC5B7F1EAA576F00D10A06 /* AppDelegate.swift in Sources */,
 				C1DC5B871EAA576F00D10A06 /* Picryption.xcdatamodeld in Sources */,
 				C1DC5BBA1EAA59B400D10A06 /* Errors.swift in Sources */,
@@ -661,8 +668,9 @@
 			baseConfigurationReference = 39E1A6B323F94A14B51FF369 /* Pods-Picryption.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = AWTQ86CKW7;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Picryption/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dylanmodesitt.Picryption;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -675,8 +683,9 @@
 			baseConfigurationReference = 6D09C701995661E9509A523A /* Pods-Picryption.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = AWTQ86CKW7;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Picryption/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dylanmodesitt.Picryption;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -765,6 +774,7 @@
 				C1DC5BA81EAA576F00D10A06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C1DC5BA91EAA576F00D10A06 /* Build configuration list for PBXNativeTarget "PicryptionTests" */ = {
 			isa = XCConfigurationList;
@@ -773,6 +783,7 @@
 				C1DC5BAB1EAA576F00D10A06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C1DC5BAC1EAA576F00D10A06 /* Build configuration list for PBXNativeTarget "PicryptionUITests" */ = {
 			isa = XCConfigurationList;
@@ -781,6 +792,7 @@
 				C1DC5BAE1EAA576F00D10A06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

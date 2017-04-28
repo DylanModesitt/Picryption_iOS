@@ -12,3 +12,7 @@ import UIKit
 struct UIConstants {
     static let darkPurple = UIColor.fromHex(rgbValue: 0x551A8B)
 }
+
+struct Segues {
+    static let goToMessage = "goToMessage"
+}

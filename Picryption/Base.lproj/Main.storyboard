@@ -1,26 +1,94 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5Dg-DD-jNL">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Upload-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="UploadViewController" customModule="Picryption" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUq-f1-NCn">
+                                <rect key="frame" x="182" y="353" width="50" height="30"/>
+                                <state key="normal" title="Upload"/>
+                                <connections>
+                                    <action selector="uploadImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NMP-4B-RGJ"/>
+                                </connections>
+                            </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Mfp-w9-DOP">
+                                <rect key="frame" x="188" y="679" width="39" height="37"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="currentPageIndicatorTintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </pageControl>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TUq-f1-NCn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="AJa-pq-R1h"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Mfp-w9-DOP" secondAttribute="bottom" constant="20" id="LzL-OI-x9g"/>
+                            <constraint firstItem="Mfp-w9-DOP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X0g-5s-p05"/>
+                            <constraint firstItem="TUq-f1-NCn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gCU-zI-RIZ"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Upload" id="Cyc-Kb-ObE"/>
+                    <connections>
+                        <outlet property="pageControl" destination="Mfp-w9-DOP" id="iEf-uu-Aoz"/>
+                        <outlet property="uploadButton" destination="TUq-f1-NCn" id="t8z-Aa-SrQ"/>
+                        <segue destination="d84-aT-Ouh" kind="show" identifier="goToMessage" id="bKW-uL-JQF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="500.00000000000006" y="-24.456521739130437"/>
+        </scene>
+        <!--Message-->
+        <scene sceneID="91A-bc-lur">
+            <objects>
+                <viewController id="d84-aT-Ouh" customClass="MessageViewController" customModule="Picryption" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pZc-iK-jkj"/>
+                        <viewControllerLayoutGuide type="bottom" id="tRr-yL-r1l"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lUm-GU-4o1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Message" id="4z8-vB-f6o"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a3C-0f-edG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1438" y="-24"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="36H-JA-NAI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="5Dg-DD-jNL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ivs-t6-6dr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Ygd-Nz-chq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4kz-DE-d1N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-407.24637681159425" y="-24.456521739130437"/>
         </scene>
     </scenes>
 </document>

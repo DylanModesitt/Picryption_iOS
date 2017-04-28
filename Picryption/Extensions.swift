@@ -20,7 +20,7 @@ extension String {
     }
     
     func toBinaryString(withFormat: String) -> String? {
-        return self.toBinary()?.reduce("", { $0 + String(format: withFormat, $1)})
+        return self.toBinary()?.reduce("", { String(describing: $0) + String(format: withFormat, $1)})
     }
     
     func toBinaryArray() -> [[Int]] {
