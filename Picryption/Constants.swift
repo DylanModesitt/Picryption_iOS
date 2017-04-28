@@ -15,4 +15,5 @@ struct UIConstants {
 
 struct Segues {
     static let goToMessage = "goToMessage"
+    static let processParameters = "processParameters"
 }

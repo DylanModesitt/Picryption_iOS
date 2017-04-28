@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -64,13 +65,83 @@
                     <view key="view" contentMode="scaleToFill" id="lUm-GU-4o1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="Al4-1j-LaD">
+                                <rect key="frame" x="188" y="679" width="39" height="37"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="currentPageIndicatorTintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </pageControl>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="1Qn-jh-Ryt">
+                                <rect key="frame" x="20" y="72" width="374" height="145"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardAppearance="alert"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tRr-yL-r1l" firstAttribute="top" secondItem="Al4-1j-LaD" secondAttribute="bottom" constant="20" id="Jm2-5N-sYx"/>
+                            <constraint firstItem="1Qn-jh-Ryt" firstAttribute="leading" secondItem="lUm-GU-4o1" secondAttribute="leadingMargin" id="S43-px-GDJ"/>
+                            <constraint firstItem="1Qn-jh-Ryt" firstAttribute="top" secondItem="pZc-iK-jkj" secondAttribute="bottom" constant="8" id="ZNu-l6-JbM"/>
+                            <constraint firstItem="1Qn-jh-Ryt" firstAttribute="trailing" secondItem="lUm-GU-4o1" secondAttribute="trailingMargin" id="baA-NB-G4C"/>
+                            <constraint firstItem="Al4-1j-LaD" firstAttribute="centerX" secondItem="lUm-GU-4o1" secondAttribute="centerX" id="wwe-Px-4LV"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Message" id="4z8-vB-f6o"/>
+                    <navigationItem key="navigationItem" title="Message" id="4z8-vB-f6o">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="jrh-r4-xH4">
+                            <connections>
+                                <action selector="doneEditingText:" destination="d84-aT-Ouh" id="Lta-lQ-Lyq"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="textView" destination="1Qn-jh-Ryt" id="6mR-dQ-Gzo"/>
+                        <segue destination="FhH-ig-tp1" kind="show" identifier="processParameters" id="N7T-4X-aM1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a3C-0f-edG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1438" y="-24"/>
+            <point key="canvasLocation" x="1437.68115942029" y="-24.456521739130437"/>
+        </scene>
+        <!--Process View Controller-->
+        <scene sceneID="PNp-3m-brX">
+            <objects>
+                <viewController id="FhH-ig-tp1" customClass="ProcessViewController" customModule="Picryption" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ceb-9Y-FEg"/>
+                        <viewControllerLayoutGuide type="bottom" id="GxC-Ud-8Oa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WOO-Br-5ba">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czY-i1-bOW">
+                                <rect key="frame" x="173" y="353" width="69" height="30"/>
+                                <state key="normal" title="Download"/>
+                                <connections>
+                                    <action selector="didRequestDownload:" destination="FhH-ig-tp1" eventType="touchUpInside" id="Ukm-QN-KPK"/>
+                                </connections>
+                            </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="2" translatesAutoresizingMaskIntoConstraints="NO" id="fge-K3-Ofu">
+                                <rect key="frame" x="188" y="679" width="39" height="37"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GxC-Ud-8Oa" firstAttribute="top" secondItem="fge-K3-Ofu" secondAttribute="bottom" constant="20" id="0vy-Zq-ZCt"/>
+                            <constraint firstItem="czY-i1-bOW" firstAttribute="centerY" secondItem="WOO-Br-5ba" secondAttribute="centerY" id="CoB-Ca-xIt"/>
+                            <constraint firstItem="fge-K3-Ofu" firstAttribute="centerX" secondItem="WOO-Br-5ba" secondAttribute="centerX" id="ETQ-d5-zTX"/>
+                            <constraint firstItem="czY-i1-bOW" firstAttribute="centerX" secondItem="WOO-Br-5ba" secondAttribute="centerX" id="d9H-O7-sXR"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CDh-0w-6pw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2339" y="-23"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="36H-JA-NAI">

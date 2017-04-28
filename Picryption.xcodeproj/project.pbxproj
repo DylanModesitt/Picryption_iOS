@@ -12,6 +12,7 @@
 		AEDB16311EB3DEB300A82F13 /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDB16301EB3DEB300A82F13 /* UploadViewController.swift */; };
 		AEDB16331EB3E7B200A82F13 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDB16321EB3E7B200A82F13 /* MessageViewController.swift */; };
 		AEDB16351EB3E8E100A82F13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDB16341EB3E8E100A82F13 /* ViewController.swift */; };
+		AEDB16371EB3EEDE00A82F13 /* ProcessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEDB16361EB3EEDE00A82F13 /* ProcessViewController.swift */; };
 		C1DC5B7F1EAA576F00D10A06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1DC5B7E1EAA576F00D10A06 /* AppDelegate.swift */; };
 		C1DC5B841EAA576F00D10A06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1DC5B821EAA576F00D10A06 /* Main.storyboard */; };
 		C1DC5B871EAA576F00D10A06 /* Picryption.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C1DC5B851EAA576F00D10A06 /* Picryption.xcdatamodeld */; };
@@ -55,6 +56,7 @@
 		AEDB16301EB3DEB300A82F13 /* UploadViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		AEDB16321EB3E7B200A82F13 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		AEDB16341EB3E8E100A82F13 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AEDB16361EB3EEDE00A82F13 /* ProcessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProcessViewController.swift; sourceTree = "<group>"; };
 		B60AC1454B7410E26A485374 /* Pods-PicryptionUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PicryptionUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PicryptionUITests/Pods-PicryptionUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C1DC5B7B1EAA576F00D10A06 /* Picryption.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Picryption.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1DC5B7E1EAA576F00D10A06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				C1DC5B821EAA576F00D10A06 /* Main.storyboard */,
+				AEDB16361EB3EEDE00A82F13 /* ProcessViewController.swift */,
 				AEDB16321EB3E7B200A82F13 /* MessageViewController.swift */,
 				AEDB16301EB3DEB300A82F13 /* UploadViewController.swift */,
 				C1DC5BB21EAA578E00D10A06 /* Controller */,
@@ -514,6 +517,7 @@
 				C1DC5B871EAA576F00D10A06 /* Picryption.xcdatamodeld in Sources */,
 				C1DC5BBA1EAA59B400D10A06 /* Errors.swift in Sources */,
 				C1DC5BBC1EAA5B9800D10A06 /* Constants.swift in Sources */,
+				AEDB16371EB3EEDE00A82F13 /* ProcessViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
